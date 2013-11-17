@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+    <div id="hackerNews">
+      <h2>{{headerName}}</h2>
+      <p>Version: <em class="version">{{appVersion}}</em></p>
+      <ul>
+      {{#each item in model}}
+        <li>{{item.title}} - <em>{{item.postedAgo}}</em> by <strong>{{item.postedBy}}</strong></li>
+      {{/each}}
+      </ul>
+    </div>
+  </script>
+
+  <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>
+  <script src="js/libs/ember-1.0.0-rc.6.1.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+/* Put your CSS here */
+#hackerNews { margin:10px 30px; }
+#hackerNews h2 { color: #3498db; border-bottom: 1px solid #3498db; margin:0; }
+#hackerNews p { margin:5px 0;  }
+#hackerNews p .version { color: #2ecc71; font-weight: bold; }
+#hackerNews ul { list-style: none outside none; padding: 0; margin: 10px 0; }
+#hackerNews ul li { margin-bottom: 1px; background: #CAE8FC; padding: 10px; font-size: 14px; }
